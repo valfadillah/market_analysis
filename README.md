@@ -1,3 +1,4 @@
+![Supermarket in another world](https://github.com/valfadillah/market_analysis/blob/main/oxana-melis-loDPKt_srQ0-unsplash.jpg)
 # market_analysis
 
 ## Resume
