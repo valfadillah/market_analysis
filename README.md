@@ -40,4 +40,30 @@ gross_income DECIMAL (12,2),
 Rating FLOAT (2,1)
 )
 ```
+### 2. Data Exploration
+1. **Record Count**. Determine total number on dataset
+2. **Identifying**. Explatory dataset using simple operation to possessed information on dataset
+```sql
+SELECT COUNT(*) FROM market;
+SELECT city, COUNT(*) FROM market GROUP BY 1;
+SELECT branch, COUNT(*) FROM market GROUP BY 1;
+SELECT gender, COUNT(*) FROM market GROUP BY 1;
+SELECT product_line, COUNT(*) FROM market GROUP BY 1 ORDER BY 2 DESC;
+SELECT product_line, SUM(gross_income)As total_income FROM market GROUP BY 1 ORDER BY 2 DESC;
+SELECT product_line, ROUND(SUM(tax_5),2)As total_tax FROM market GROUP BY 1 ORDER BY 2 DESC;
+SELECT product_line, SUM(sales)AS total_sales FROM market GROUP BY 1 ORDER BY 2 DESC;
+SELECT time_serving, COUNT(*)  FROM market GROUP BY 1;
+```
+### 3. Buisness problems and solution
+Through SQL queries were developed to overcome spesific buisness question 
+1. **Write a SQL query to retrieve all columns for sales made on '2019-03-27'.**
+2. **Write a SQL query to retrieve all transactions  where the category is 'Home and lifestyle' and the quantity sold is more than 5 in the month of March-2019.**
+3. **Write a SQL query to calculate the total sales (total_sale) for each product_line.**
+4. **Write a SQL query to find the average age of quantity that purchased from the 'Sports and Travel' category.**
+5. **Write a SQL query to find the total number of transactions (Invoice_id) made by each gender in each categor.**
+6. **Write a SQL query to calculate the average sale for each month. Find out best selling month**
+7. **Write a SQL query to who is the highest sales customer.**
+8. **Write a SQL query to find the top 3 product_line based on the highest gross_income**
+9. **Write a SQL query to create each shift and number of orders (Example Morning <12, Afternoon Between 12 & 14, Evening >14)**
+   
 
