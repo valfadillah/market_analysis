@@ -2,7 +2,7 @@
 # market_analysis
 
 ## Resume
-**title** : Supermarket analysis
+**Title** : Supermarket analysis
 
 In this project I will demonstrate SQL skills and techniques that usually used to explore and analyze a data. SQL is one of program language that were used widely on processing data, especially as the data analist. This project encompasses not only creating data base, inputing data into database, conducting exploratory data analysis (EDA) but also answering business related questions. The data was collected from [Kaggle dataset](https://www.kaggle.com/datasets/faresashraf1001/supermarket-sales/data)
 
